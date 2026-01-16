@@ -51,9 +51,7 @@
 
 # Project Overview
 
-This document is a laboratory report for the **Circuit Theory** course within the **Department of Informatics and Computer Engineering** at the **University of West Attica**.
-
-The project focuses on the **study and analysis of the resonance effect in RLC circuits**. It explores the behavior of **resistors, inductors, and capacitors** when connected in **series** and **parallel** configurations across varying frequencies.
+This README provides an overview of **Lab 1**, submitted for the **Electronics** course at the University of West Attica. The lab focuses on **resistor measurements**, **D.C. voltage**, and **A.C. signal analysis**.
 
 ---
 
@@ -64,136 +62,161 @@ The project focuses on the **study and analysis of the resonance effect in RLC c
 | 1 | `assign/` | Assignment documents |
 | 1.1 | `assign/Exercise-1st-Resistance-and-Oscilloscope.pdf` | Assignment instructions (English) |
 | 1.2 | `assign/Άσκηση-1η-Αντιστάσεις-και-Παλμογράφος.pdf` | Assignment instructions (Greek) |
-| 2 | `componentss/` | Lab components and equipment photos |
+| 2 | `components/` | Lab components and equipment photos |
 | 3 | `docs/` | Theory and reference documents |
 | 3.1 | `docs/Resistance-and-Oscilloscope.pdf` | Theory (English) |
 | 3.2 | `docs/Αντιστάσεις-και-Παλμογράφος.pdf` | Theory (Greek) |
-| 4 | `multisimm/` | Multisim projects and screenshots |
-| 4.1 | `multisimm/Screenshots/` | Screenshots of Multisim simulations |
-| 4.2 | `multisimm/*.ms14` | Multisim project files |
-| 5 | `photos-in-labb/` | Photos of lab setup and measurements |
-| 6 | `visioo/` | Visio diagrams for circuits and measurements |
+| 4 | `multisim/` | Multisim projects and screenshots |
+| 4.1 | `multisim/Screenshots/` | Screenshots of Multisim simulations |
+| 4.2 | `multisim/*.ms14` | Multisim project files |
+| 5 | `photos-in-lab/` | Photos of lab setup and measurements |
+| 6 | `visio/` | Visio diagrams for circuits and measurements |
 | 7 | `README.md` | Repository overview and instructions |
 
 ---
 
-## Key Contents
+## Equipment & Components
 
-The report is structured into:
-
-- **Theoretical Analysis**  
-- **Software Simulations** using *Multisim*  
-- **Experimental Laboratory Results**
+- **Analog & Digital Training System:** MCP M21-7000A  
+- **Breadboard:** M21-7000A  
+- **Oscilloscope:** HAMEG HM203-5  
+- **Digital Multimeter:** MT8045  
+- **Resistors:** 1 kΩ, 27 kΩ, 39 kΩ  
 
 ---
 
-## 1. RLC Series Circuit
+## Project Objectives
 
-**Theory:**  
-Analysis of the frequency at which the **inductive reactance (Xₗ)** and **capacitive reactance (Xc)** cancel each other out.
+1. **Resistor Resistance Measurement**  
+   Calculate and measure resistor values using:
+   - Color codes
+   - Theoretical formulas
+   - Simulation software
 
-**Key Observations:**
+2. **D.C. Voltage Measurement**  
+   Analyze and measure direct current both theoretically and experimentally.
 
-- The **impedance (Z)** becomes equal to the **ohmic resistance (R)** at resonance.
-- **Maximum current flow** occurs at the resonant frequency.
-- **Overvoltage phenomena** are observed across the capacitor and inductor.
+3. **A.C. Measurement**  
+   Measure signal period and calculate frequency.
 
-**Formula Used:**  
+---
+
+## Key Findings – Resistance Measurement
+
+### Theoretical & Simulative Analysis
+
+The equivalent resistance for **resistors in parallel** was calculated.  
+
+For a **1 kΩ** and a **27 kΩ** resistor in parallel:
 
 $$
-f_r = \frac{1}{2\pi\sqrt{LC}}
+R_{\text{eq}} = \frac{1 \times 10^3 \cdot 27 \times 10^3}{1 \times 10^3 + 27 \times 10^3} \approx 0.97 \text{ kΩ}
 $$
 
-Where:  
-- \(f_r\) = resonant frequency  
-- \(L\) = inductance  
-- \(C\) = capacitance
-
+- **Simulation Result (Multisim):** 964.286 Ω  
 
 ---
 
-## 2. RLC Parallel Circuit
+### Experimental Observations
 
-- Theoretical solutions and **simulation results** for parallel RLC configurations.  
-- Detailed analysis provided in the report (pages 12–17).
+Actual measurements differed slightly due to resistor **tolerance ±5%** (gold stripe):
 
----
+- **1 kΩ Resistor:** 0.9893 kΩ  
+- **27 kΩ Resistor:** 27.12 kΩ  
+- **39 kΩ Resistor:** 38.43 kΩ  
 
-## Laboratory Equipment
-
-The experimental work utilized the following tools:
-
-- **Multimeters** (Analog and Digital)  
-- **Oscilloscope**  
-- **Breadboard**  
-- **Passive Components:**  
-  - Resistors  
-  - Capacitors  
-  - Inductors
+These results confirm that both theoretical calculations and simulations closely match practical measurements.
 
 ---
 
-# Installation & Setup Guide
+# Installation & Setup Guide  
 
-This repository contains laboratory simulations and analysis for **Circuit Theory**, focusing on **RLC series and parallel circuits** and their resonance behavior.  
-
-All simulations are implemented in **NI Multisim**.
+This guide explains how to set up the **Resistance and Oscilloscope Lab** project, including prerequisites, software setup, and running the simulations.  
+The repository contains Multisim simulations, documentation, and experimental instructions for **resistor measurements**, **D.C. voltage**, and **A.C. signal analysis**.
 
 ---
 
 ## Prerequisites
 
-### Required Software
-- **NI Multisim 14** (or later)  
-  Ensure your system meets the requirements for running `.ms14` files.  
-  Download from [NI Multisim](https://www.ni.com/en-us/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-multisim.html).
+Before running the project, ensure the following software and hardware requirements are met:
 
-### Optional Software
-- **PDF Viewer** for documentation: `Coordination.pdf` / `Συντονισμός.pdf`
+### 1. Software
+
+#### Multisim
+- **NI Multisim 14 or higher**  
+- Required for running the simulation files (`*.ms14`) included in the repository.
+
+#### PDF Reader
+- Any PDF viewer to open assignment instructions and theory documents:
+  - `assign/Exercise-1st-Resistance-and-Oscilloscope.pdf`  
+  - `docs/Resistance-and-Oscilloscope.pdf`  
+
+#### Optional Tools
+- **Microsoft Visio** or compatible software to view circuit diagrams in `visio/`.
+- Spreadsheet software (Excel, LibreOffice Calc) for calculations if needed.
 
 ---
 
-## Installation Steps
+### 2. Hardware (Optional for Lab Experiments)
+
+- **Analog & Digital Training System:** MCP M21-7000A  
+- **Oscilloscope:** HAMEG HM203-5  
+- **Digital Multimeter:** MT8045  
+- **Resistors:** 1 kΩ, 27 kΩ, 39 kΩ  
+- **Breadboard:** Included with the training system
+
+> Hardware is optional if performing only simulation-based exercises.
+
+---
+
+## Installation & Setup
 
 ### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/Circuit-Theory/Coordination.git
+git clone https://github.com/Electronics-aka-Uniwa/Resistance-and-Oscilloscope.git
+cd Resistance-and-Oscilloscope
 ```
 
-### 2. Navigate to Project Directory
+### 2. Open Multisim Simulations
+1. Launch NI Multisim.
+2. Navigate to the `multisim/` folder in the repository.
+3. Open any `.ms14` project file, for example:
 ```bash
-cd Coordination
+multisim/Lab1_Resistor_Oscilloscope.ms14
 ```
-Ensure the following folder structure exists:
-```bash
-assign/
-docs/
-multisim/
-```
+4. Run the simulation using the Simulate button.
+5. Verify measurements and compare with theoretical calculations provided in `docs/`.
+
+### 3. Access Documentation
+1. Open the `docs/` folder:
+    - English: `Resistance-and-Oscilloscope.pdf`
+    - Greek: `Αντιστάσεις-και-Παλμογράφος.pdf`
+
+2. Open the `assign/` folder for lab instructions:
+    - English: `Exercise-1st-Resistance-and-Oscilloscope.pdf`
+    - Greek: `Άσκηση-1η-Αντιστάσεις-και-Παλμογράφος.pdf`
+
+4. Optional: Open Visio Diagrams
+    - Navigate to `visio/`
+    - Open `.vsd` or `.vsdx` files in Microsoft Visio to view the circuit diagrams.
 
 ---
 
-## Multisim Simulation Files
+## Running Experiments
+### 1. Resistor Measurements
+- Use color codes and theoretical formulas to calculate resistance.
+- Compare results with Multisim simulations.
+- Optionally, measure resistors with a multimeter.
 
-The repository includes two key simulation files:
+### 2. D.C. Voltage Analysis
+- Set up the circuit in Multisim or on the breadboard.
+- Measure voltage values and verify against theoretical calculations.
 
-| File  | Description |
-|------:|-------------|
-| multisim/CoordinationSerial.ms14 |  RLC series circuit simulation |
-| multisim/CoordinationParallel.ms14 |  RLC parallel circuit simulation |
+### 3. A.C. Signal Analysis
+- Apply sinusoidal or square signals.
+- Use the oscilloscope (real or simulated) to measure:
+  - Period
+  - Frequency
+  - Amplitude
 
-
-### 3. Open a Simulation in Multisim
-- Launch NI Multisim.
-- Select File → Open.
-- Navigate to the `multisim/` folder.
-- Open the desired `.ms14` file (series or parallel circuit).
-- Wait for the circuit topology to load.
-
----
-
-## Open the Documentation
-1. Navigate to the `docs/` directory
-2. Open the report corresponding to your preferred language:
-    - English: `Coordination.pdf`
-    - Greek: `Συντονισμός.pdf`
