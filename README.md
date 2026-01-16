@@ -29,18 +29,17 @@
 </p>
 
 <p align="center">
-  Supervisor: Anastasios Tsilikounas, Laboratory Teaching Staff
+  Supervisor: Eleni Tsalera, Laboratory Teaching Staff
 </p>
 <p align="center">
-  <a href="https://ice.uniwa.gr/en/emd_person/anastasios-tsilikounas/" target="_blank">UNIWA Profile</a> ·
-  <a href="https://www.linkedin.com/in/anastasios-tsilikounas-31111566/" target="_blank">LinkedIn</a>
+  <a href="https://www.researchgate.net/profile/Eleni-Tsalera-2" target="_blank">UNIWA Profile</a>
 </p>
 
 <p align="center">
-  Co-supervisor: Georgios Antoniou, Laboratory Teaching Staff
+  Co-supervisor: Michalis Diamantopoulos, Lecturer in Applications
 </p>
 <p align="center">
-  <a href="https://ice.uniwa.gr/en/emd_person/georgios-antoniou/" target="_blank">UNIWA Profile</a>
+  <a href="https://ice.uniwa.gr/emd_person/22674/" target="_blank">UNIWA Profile</a>
 </p>
 
 <p align="center">
